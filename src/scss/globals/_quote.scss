@@ -1,0 +1,8 @@
+.quote {
+  flex-basis: 100%;
+  @media (min-width: 640px) {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    flex-basis: 30%;
+  }
+}

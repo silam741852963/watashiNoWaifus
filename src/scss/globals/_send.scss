@@ -1,0 +1,33 @@
+.send {
+  display: grid;
+  grid-template-areas:
+    "from to"
+    "message message"
+    "submit submit";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+.formControl__from {
+  grid-area: from;
+  justify-self: start;
+}
+.formControl__to {
+  grid-area: to;
+  justify-self: end;
+}
+.formControl__message {
+  grid-area: message;
+}
+.submit__button {
+  grid-area: submit;
+}
+.message__label {
+  flex-basis: 100%;
+}
+.form__option {
+  background: rgb(136 19 55 / var(--tw-border-opacity));
+}

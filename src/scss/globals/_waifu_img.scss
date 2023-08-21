@@ -1,0 +1,15 @@
+.waifu {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 410%;
+  filter: brightness(0.25);
+  cursor: pointer;
+
+  @media (max-width: 641px) {
+    background-size: 100%;
+    max-width: calc(100vw - 2rem);
+  }
+  @media (prefers-color-scheme: light) {
+    filter: brightness(0.7);
+  }
+}
